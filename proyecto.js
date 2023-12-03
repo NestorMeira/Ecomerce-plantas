@@ -4,10 +4,10 @@ const botonVaciar = document.getElementById('vaciar-carrito');
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
 
-let carrito = JSON.parse(localStorage.getItem("carro")) || [];
+let carrito = JSON.parse(sessionStorage.getItem("carro")) || [];
 
 const local = () => {
-  localStorage.setItem("carro", JSON.stringify(carrito));
+  sessionStorage.setItem("carro", JSON.stringify(carrito));
 }
 
 botonVaciar.addEventListener('click', () => {
@@ -87,8 +87,8 @@ const actualizarCarrito = () => {
 
 const contador = () => {
   const carritoLength = carrito.length;
-  localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
-  contadorCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+  sessionStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+  contadorCarrito.innerText = JSON.parse(sessionStorage.getItem("carritoLength"));
 }
 
 const cactus = document.getElementById('cactus');
