@@ -259,6 +259,8 @@ p{
     padding: 10px;
     border-color: transparent;
     border-radius: 10px ; 
+    background-color: rgba(47, 129, 245, 0.919);
+   margin-left: 50px;
 }
 #finalizar a{
     text-decoration: none;
@@ -279,7 +281,7 @@ p{
     
            /*Responsive*/
 
-@media screen and (max-width:769px){
+@media screen and (max-width:991px){
     header h1{
     font-size: 42px;
     }
@@ -297,8 +299,8 @@ p{
     #boton-carrito{
         background-color: transparent;
         font-size: 18px;
-        margin-top: -20px;
-         margin-left:100px;
+        margin-top: -50px;
+         margin-left:80%;
         }
     #contenedor-productos{
         justify-content: space-around;
@@ -306,7 +308,9 @@ p{
     }    
 } 
 
-@media screen and (max-width:449px){
+
+
+@media screen and (max-width:530px){
     header h1{
         font-size: 38px; 
     }
@@ -352,12 +356,12 @@ p{
 
     #footer{
         font-size: 13px;
-         padding: 1px;
+        
          width: auto;  
     }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:422px){
     header h1{
         font-size: 29px;
     }
@@ -378,7 +382,7 @@ p{
         background-color: transparent;
         font-size: 15px;
         margin-top: -50px;
-        margin-left: 86%;
+        margin-left: 85%;
     }
     #contenedor-productos{
         justify-content: space-around;
@@ -386,7 +390,7 @@ p{
      }    
     #footer{
         font-size: 13px;
-        padding: 1px;
+        
         width: auto;    
     }
 }
