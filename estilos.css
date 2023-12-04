@@ -394,3 +394,8 @@ p{
         width: auto;    
     }
 }
+
+#footer #porfolio :hover{
+    font-size: 1.1rem;
+    transition:all .4s;
+}
