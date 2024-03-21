@@ -99,13 +99,14 @@ nav a:hover{
     margin-left: -44%;
     padding-bottom: 30px;
     padding-top: 10px;
+    background-color: rgb(192, 251, 219);
 }
 
-.menu li:hover ul{
+.submenu__categorias.activo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+
      width: 100%;
    
 
@@ -426,7 +427,7 @@ p{
     }
     #contenedor-productos{
         justify-content: space-around;
-        margin: -287px auto 20px auto;  
+        margin: -200px auto 20px auto;  
      }    
     #footer{
         font-size: 13px;
@@ -441,6 +442,9 @@ p{
 }
 .submenu__categorias{
     margin-left: -29%;
+    font-size: 1rem;
+}
+.submenu__categorias.activo a{
     font-size: 1rem;
 }
 }
