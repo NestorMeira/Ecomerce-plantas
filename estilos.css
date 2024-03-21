@@ -75,8 +75,10 @@ nav a {
     color: darkslategray;
    padding: 25px 10px;
     text-decoration: none;
-    font-style: normal;
-    font-size: 1.1rem; }
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px  rgba(104, 104, 104, 0.3); }
 nav a:hover{
     color: rgb(77, 216, 149); 
 }
@@ -89,28 +91,35 @@ nav a:hover{
     position: absolute;
     display: none;
     color:#054733 ;
-    width: 100%;
-    text-shadow: 1px 1px 2px  rgba(104, 104, 104, 0.3);
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 2;
-    margin-bottom: 50px;
-    margin-left: -44%;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    margin-bottom: 50px; 
     background-color: rgb(192, 251, 219);
+    padding-right: 20px;
+    width: 160px;
+
 }
 
 .submenu__categorias.activo{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-     width: 100%;
-   
 
+    margin-top: -20px;
+    margin-left: 10px;
+ 
 }
+.submenu__categorias.activo li{
+    width: 150px;
+
+    
+}
+.submenu__categorias.activo ul{
+    width: 150px;
+}
+
 #boton-carrito{
     border: none;
     color: darkslategray;
@@ -340,7 +349,7 @@ p{
         margin: -280px auto 20px auto;   
     }    
     .submenu__categorias{
-        margin-left: -40%;
+        
     }
 } 
 
@@ -355,7 +364,7 @@ p{
         justify-content: flex-start;
     }
     .submenu__categorias{
-        margin-left: -20%;
+        
     }
 }
 
@@ -406,7 +415,7 @@ p{
     }
 
 .submenu__categorias{
-    margin-left: -30%;
+ 
     font-size: 1rem;
 }
 }
@@ -441,16 +450,21 @@ p{
     transition:all .4s;
 }
 .submenu__categorias{
-    margin-left: -29%;
+
     font-size: 1rem;
+ 
+
 }
 .submenu__categorias.activo a{
-    font-size: 1rem;
+    font-size: 1rem;  
+}
+.submenu__categorias.activo{
+  margin-left: -20px;
 }
 }
-@media screen and (max-width:370px){
+@media screen and (max-width:374px){
     .submenu__categorias{
-        margin-left: -29%;
+    
         font-size: 1rem;
     }
     header h1{
